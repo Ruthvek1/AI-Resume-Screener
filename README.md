@@ -8,7 +8,11 @@
 
 Upload your resume PDF and any job description. The AI scores your fit (0–100), finds skill gaps, and rewrites your bullet points using a multi-model approach (Gemini 2.5 Flash + Groq Llama 70B).
 
-> **[Live Demo Placeholder]**
+<div align="center">
+  <img src="./screenshot.png" alt="Front Page Screenshot" width="100%" style="border-radius: 8px; margin-bottom: 20px;" />
+  <br />
+  <img src="./demo.gif" alt="Project Demo Video" width="100%" style="border-radius: 8px;" />
+</div>
 
 ## Features
 
