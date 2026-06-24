@@ -242,7 +242,8 @@ def push():
     touch_file(filepath, message)
 
     # Commit and push
-    run("git add .", cwd=REPO_PATH)
+    run(f'git add "{filepath}"', cwd=REPO_PATH)
+    run(f'git add ".push_state.json"', cwd=REPO_PATH)
     run(f'git commit -m "{message}"', cwd=REPO_PATH)
     try:
         run("git push origin main", cwd=REPO_PATH)
