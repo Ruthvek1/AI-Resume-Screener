@@ -1,0 +1,18 @@
+name: Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: railwayapp/railway-github-action@v1
+        with:
+          railway-token: ${{ secrets.RAILWAY_TOKEN }}
+
+# update: config: add GitHub Actions deploy workflow — 2026-06-24T14:30:29.420278
+
+# update: config: add Railway deploy step to workflow — 2026-06-24T14:30:29.452480
+
+# update: config: add Vercel deploy step to workflow — 2026-06-24T14:30:29.484798
